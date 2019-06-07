@@ -81,7 +81,8 @@ namespace BankApp
                 sum,
                 AddSumHandler,  // обработчик добавления средств на счет
                 WithdrawSumHandler, // обработчик вывода средств
-                OpenAccountHandler); // обработчик открытия счета
+                OpenAccountHandler,
+                CheckAccountHandler); // обработчик открытия счета
         }
 
         private static void Withdraw(Bank<Account> bank)

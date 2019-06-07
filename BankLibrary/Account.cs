@@ -99,7 +99,7 @@ namespace BankLibrary
 
         public virtual decimal Check()
         {
-
+            OnChecked(new AccountEventArgs("Баланс на вашем счете: " + this._sum, this._id));
             return _sum;
         }
         // открытие счета
